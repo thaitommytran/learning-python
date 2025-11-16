@@ -27,3 +27,32 @@ print(course[0:])
 print(course[:3])
 print(course[:])
 
+# Escape Sequences
+course = "Python \"Programming"
+print(course)
+
+course = "Python \'Programming"
+print(course)
+
+course = "Python \\Programming"
+print(course)
+
+course = "Python \nProgramming"
+print(course)
+
+# Formatted Strings
+first = "Tommy"
+last = "Tran"
+full = f"{first} {last}"
+print(full)
+
+# String Methods
+course = "python programming"
+print(course.upper())  # Converts the string to uppercase
+print(course.lower())  # Converts the string to lowercase
+print(course.title())  # Converts the string to title case
+
+print(course.strip())  # Removes the whitespace from both sides of string
+print(course.lstrip())  # Removes the whitespace from left side of string
+print(course.rstrip())  # Removes the whitespace from right side of string
+
