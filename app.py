@@ -1,3 +1,6 @@
+# Import math module
+import math
+
 # Python Basics
 print("Hello World 😁")
 print("*" * 10)
@@ -58,24 +61,24 @@ print(course.rstrip())  # Removes the whitespace from right side of string
 
 print(course.find("pro"))  # Finds index of first occurrence of substring
 print(course.find("Pro"))  # Case sensitive, returns -1 if not found
-print(course.replace("p", "j"))  # Replaces all occurrences of substring with new substring
 
+print(course.replace("p", "j"))  # Replaces all occurrences of substring with new substring
 print("pro" in course)  # Checks if substring is present in string, returns True or False
 print("swift" not in course)  # Checks if substring is not present in string, returns True or False
 
 # Numbers
 x = 1
 x = 1.1
-x = 1 + 2j # a + bi
+x = 1 + 2j  # a + bi
 
 # Arithmetic Operators
-print(10 + 3) # Addition
-print(10 - 3) # Subtraction
-print(10 * 3) # Multiplication
-print(10 / 3) # Division
-print(10 // 3) # Floor Division
-print(10 % 3) # Modulus
-print(10 ** 3) # Exponentiation
+print(10 + 3)  # Addition
+print(10 - 3)  # Subtraction
+print(10 * 3)  # Multiplication
+print(10 / 3)  # Division
+print(10 // 3)  # Floor Division
+print(10 % 3)  # Modulus
+print(10 ** 3)  # Exponentiation
 
 # Comparison Operators
 print(10 > 3)
@@ -89,11 +92,16 @@ print(10 != 3)
 print(round(2.9))
 print(abs(-2.9))
 
-import math # Importing math module
+print(math.ceil(2.2))  # Rounds up to nearest integer
+print(math.floor(2.2))  # Rounds down to nearest integer
 
-print(math.ceil(2.2)) # Rounds up to nearest integer
-print(math.floor(2.2)) # Rounds down to nearest integer
-print(math.comb(5, 2)) # Calculates number of ways to choose 2 items from 5 without repetition
+
+print(math.comb(5, 2))  # Calculates number of ways to choose 2 items from 5 without repetition
+print(math.factorial(5))  # Calculates factorial of 5
+print(math.gcd(10, 20))  # Calculates greatest common divisor of 10 and 20
+print(math.isqrt(16))  # Calculates square root of 16
+print(math.lcm(10, 20))  # Calculates least common multiple of 10 and 20
+print(math.perm(5, 2))  # Calculates number of ways to choose 2 items from 5 without repetition and with order
 
 # Type Conversion
 x = input("x: ")
@@ -101,10 +109,10 @@ print(type(x))
 y = int(x) + 1
 print(f"x: {x}, y: {y}")
 
-int(x) # Converts x to an integer
-float(x) # Converts x to a float
-bool(x) # Converts x to a boolean
-str(x) # Converts x to a string
+int(x)  # Converts x to an integer
+float(x)  # Converts x to a float
+bool(x)  # Converts x to a boolean
+str(x)  # Converts x to a string
 
 # Falsy Values
 # "" # Empty string
