@@ -84,3 +84,38 @@ print(10 >= 3)
 print(10 <= 3)
 print(10 == 3)
 print(10 != 3)
+
+# Math Functions
+print(round(2.9))
+print(abs(-2.9))
+
+import math # Importing math module
+
+print(math.ceil(2.2)) # Rounds up to nearest integer
+print(math.floor(2.2)) # Rounds down to nearest integer
+print(math.comb(5, 2)) # Calculates number of ways to choose 2 items from 5 without repetition
+
+# Type Conversion
+x = input("x: ")
+print(type(x))
+y = int(x) + 1
+print(f"x: {x}, y: {y}")
+
+int(x) # Converts x to an integer
+float(x) # Converts x to a float
+bool(x) # Converts x to a boolean
+str(x) # Converts x to a string
+
+# Falsy Values
+# "" # Empty string
+# 0 # Zero
+# None # None
+# [] # Empty list
+# {} # Empty dictionary
+# () # Empty tuple
+# False # False
+
+# Truthy Values
+# "Hello" # Non-empty string
+# 1 # Non-zero number
+# True # True
