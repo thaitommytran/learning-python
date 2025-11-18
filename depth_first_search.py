@@ -16,7 +16,7 @@ def depth_first_search(graph, node):
     stack = []
 
     # append starting node
-    visited.append(node)
+    visited.add(node)
     stack.append(node)
 
     while stack:
@@ -25,7 +25,7 @@ def depth_first_search(graph, node):
 
         for n in reversed(graph[s]):
             if n not in visited:
-                visited.append(n)
+                visited.add(n)
                 stack.append(n)
 
 
