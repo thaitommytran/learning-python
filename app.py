@@ -127,3 +127,20 @@ str(x)  # Converts x to a string
 # "Hello" # Non-empty string
 # 1 # Non-zero number
 # True # True
+
+# Conditional Statements
+temperature = 35
+
+if temperature > 30:
+    print("It's a hot day")
+    print("Drink plenty of water")
+elif temperature > 20:
+    print("It's a nice day")
+else:
+    print("It's a cold day"):
+    
+print("Done")
+
+
+
+
