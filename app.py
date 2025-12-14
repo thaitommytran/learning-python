@@ -137,10 +137,21 @@ if temperature > 30:
 elif temperature > 20:
     print("It's a nice day")
 else:
-    print("It's a cold day"):
-    
+    print("It's a cold day")
+
 print("Done")
 
+# Ternary Operator
+age = 22
 
+# This code block can be replaced with a single line using the ternary operator
+if age >= 18:
+    message = "Eligible"
+else :
+    message = "Not Eligible"
 
+# This line uses the ternary operator to achieve the same result
+message = "Eligible" if age >= 18 else "Not Eligible"
+
+print(message)
 
