@@ -165,4 +165,21 @@ if (high_income or good_credit) and not student:
 else:
     print("Not eligible for loan")
 
+# Short-circuit Evaluation
+if high_income and good_credit and not student:
+    print("Eligible for loan")
 
+# Chaining Comparison Operators
+# age >= 18 and age < 65
+age = 22
+
+if 18 <= age < 65:
+    print("Eligible for loan")
+
+# Quiz
+if 10 == "10":
+    print("A")
+elif "bag" > "apple" and "bag" > "car":
+    print("B")
+else:
+    print("C")
