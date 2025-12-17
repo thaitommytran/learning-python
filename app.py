@@ -183,3 +183,68 @@ elif "bag" > "apple" and "bag" > "car":
     print("B")
 else:
     print("C")
+
+# For Loops
+for number in range(3):
+    print("Attempt", number + 1)
+
+for number in range(3):
+    print("Attempt", number + 1, (number + 1) * ".")
+
+for number in range(1, 10, 2): # Start, Stop, Step
+    print("Attempt", number, number * ".")
+
+# For Else
+successful= False 
+
+for number in range(3):
+    print("Attempt")
+
+    if successful:
+        print("Success")
+        break
+else:
+    print("Attempted 3 times and failed")
+
+# Nested Loops
+for x in range(5):
+    for y in range(3):
+        print(f"({x}, {y})")
+
+# Iterables
+for x in range(5):
+    print(x)
+
+print(type(5))
+print(type(range(5)))
+
+for x in "Python":
+    print(x)    
+
+for x in [1, 2, 3, 4]:
+    print(x)
+
+shopping_cart = ["apple", "banana", "orange"]
+
+for item in shopping_cart:
+    print(item)
+
+# While Loops
+number = 100
+
+while number > 0:
+    print(number)
+    number //= 2
+
+command = "quit"
+
+while command != "quit":
+    command = input(">")
+    print("ECHO", command)
+
+command = ""
+
+while command.lower() != "quit":
+    command = input(">")
+    print("ECHO", command)
+
