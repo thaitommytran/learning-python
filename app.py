@@ -248,3 +248,34 @@ while command.lower() != "quit":
     command = input(">")
     print("ECHO", command)
 
+# Infinite Loops
+while True:
+    command = input(">")
+    print("ECHO", command)
+    if command.lower() == "quit":
+        break   
+
+# Exercise
+total = 0
+
+for evens in range(1, 10):
+    if evens % 2 == 0:
+        total += 1
+        print(evens)
+
+print(f"We have {total} even numbers")
+
+# Functions
+def greet():
+    print("Hi there")
+    print("Welcome aboard")
+
+greet()
+
+# Arguments
+def greet(first_name, last_name):
+    print(f"Hi {first_name} {last_name}")
+    print("Welcome aboard")
+
+greet("Tommy", "Tran")
+greet("John", "Smith")
