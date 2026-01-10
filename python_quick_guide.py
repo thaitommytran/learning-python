@@ -80,3 +80,32 @@ float("-inf")
 
 # Python numbers are infinite so they never overflow
 print(math.pow(2, 200) < float("inf"))  # returns True
+
+# Lists (similar to arrays in other languages)
+arr = [1, 2, 3, 4, 5]
+print(arr)  # returns [1, 2, 3, 4, 5]
+
+# Can be used as stack
+arr.append(6)  # returns [1, 2, 3, 4, 5, 6]
+arr.pop()  # returns [1, 2, 3, 4, 5]
+
+# Can be used as queue
+arr.insert(0, 0)  # returns [0, 1, 2, 3, 4, 5]
+arr.pop(0)  # returns [1, 2, 3, 4, 5]
+
+# Assignment
+arr[0] = 10
+arr[3] = 0
+print(arr)  # returns [10, 2, 3, 0, 5]
+
+# Initialize list of size n with default value of 0
+n = 10
+arr = [0] * n
+print(arr)  # returns [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+print(len(arr))  # returns 10
+
+# CAREFUL: -1 is not out of bounds, it's the last element
+print(arr[-1])  # returns 0
+
+# Indexing at -2 is the second to last element, etc.
+print(arr[-2])  # returns 5
