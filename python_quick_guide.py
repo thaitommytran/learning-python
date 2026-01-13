@@ -141,3 +141,27 @@ for n1, n2 in zip(nums1, nums2):
 arr = [1, 2, 3, 4, 5]
 arr.reverse()
 print(arr)  # returns [5, 4, 3, 2, 1]
+
+# Sorting a list
+arr = [5, 4, 7, 3, 8]
+
+arr.sort()
+print(arr)  # returns [3, 4, 5, 7, 8]
+
+arr.sort(reverse=True)
+print(arr)  # returns [8, 7, 5, 4, 3]
+
+arr = ["bob", "alice", "jane", "doe"]
+arr.sort()
+print(arr)  # returns ["alice", "bob", "doe", "jane"]
+
+# Custom sort (by length of string)
+arr.sort(key=lambda x: len(x))
+print(arr)  # returns ["bob", "doe", "alice", "jane"]
+
+# List Comprehensions
+arr = [i for i in range(5)]
+print(arr)  # returns [0, 1, 2, 3, 4]
+
+arr = [i + i for i in range(5)]
+print(arr)  # returns [0, 2, 4, 6, 8]
