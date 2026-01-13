@@ -66,7 +66,7 @@ print(10 % 3)  # returns 1
 print(-10 % 3)  # returns 2
 
 # Math helpers
-import math
+import math  # noqa: E402
 
 print(math.fmod(-10, 3))  # returns -1
 print(math.floor(3 / 2))  # returns 1
@@ -109,3 +109,35 @@ print(arr[-1])  # returns 0
 
 # Indexing at -2 is the second to last element, etc.
 print(arr[-2])  # returns 5
+
+# Sublist (aka slicing)
+arr = [1, 2, 3, 4, 5]
+print(arr[1:4])  # returns [2, 3, 4]
+
+# Unpacking
+a, b, c = [1, 2, 3]
+print(a, b, c)  # returns 1 2 3
+
+# Looping through lists
+nums = [1, 2, 3]
+
+for i in range(len(nums)):  # Using index
+    print(nums[i])  # returns 1 2 3
+
+for num in nums:  # Using value
+    print(num)  # returns 1 2 3
+
+for i, n in enumerate(nums):  # Using index and value
+    print(i, n)  # returns 0 1 1 2 2 3
+
+# Looping through multiple lists simultaneously
+nums1 = [1, 3, 5]
+nums2 = [2, 4, 6]
+
+for n1, n2 in zip(nums1, nums2):
+    print(n1, n2)  # returns 1 2 3 4 5 6
+
+# Reversing a list
+arr = [1, 2, 3, 4, 5]
+arr.reverse()
+print(arr)  # returns [5, 4, 3, 2, 1]
