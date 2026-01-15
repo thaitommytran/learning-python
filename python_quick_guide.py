@@ -207,3 +207,76 @@ print(queue)  # returns deque(["z", "b", "c"])
 
 queue.pop()
 print(queue)  # returns deque(["z", "b"])
+
+# Hash sets
+my_set = set()
+my_set.add(1)
+my_set.add(2)
+my_set.add(3)
+print(my_set)  # returns {1, 2, 3}
+print(len(my_set))  # returns 3
+
+print(1 in my_set)  # returns True
+print(4 in my_set)  # returns False
+
+my_set.remove(2)
+print(my_set)  # returns {1, 3}
+
+# List to set
+my_set = set([1, 2, 3, 4, 5])
+print(my_set)  # returns {1, 2, 3, 4, 5}
+
+# Set comprehension
+my_set = {x for x in range(5)}
+print(my_set)  # returns {0, 1, 2, 3, 4}
+
+# Dictionaries (similar to hash maps)
+my_dict = {}
+my_dict["alice"] = 88
+my_dict["bob"] = 77
+print(my_dict)  # returns {"alice": 88, "bob": 77}
+print(len(my_dict))  # returns 2
+
+my_dict["alice"] = 80
+print(my_dict)  # returns {"alice": 80, "bob": 77}
+
+print("alice" in my_dict)  # returns True
+print("carol" in my_dict)  # returns False
+
+# Dictionary Comprehensions
+my_dict = {i: 2 * i for i in range(3)}
+print(my_dict)  # returns {0: 0, 1: 2, 2: 4}
+
+# Looping through dictionaries
+my_dict = {"alice": 90, "bob": 70}
+for key in my_dict:
+    print(key, my_dict[key])
+    # returns alice 90
+    # returns bob 70
+
+for val in my_dict.values():
+    print(val)
+    # returns 90
+    # returns 70
+
+for key, val in my_dict.items():
+    print(key, val)
+    # returns alice 90
+    # returns bob 70
+
+# Tuples (similar to arrays, but immutable)
+tup = (1, 2, 3)
+print(tup)  # returns (1, 2, 3)
+print(tup[0])  # returns 1
+print(tup[-1])  # returns 3
+
+# Cannot modify a tuple
+# tup[0] = 10  # throws an error
+
+# Can be used as keys for dictionaries/sets
+my_dict = {(1, 2): 3}
+print(my_dict[(1, 2)])  # returns 3
+
+my_set = set()
+my_set.add((1, 2))
+print((1, 2) in my_set)  # returns True
