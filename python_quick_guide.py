@@ -165,3 +165,45 @@ print(arr)  # returns [0, 1, 2, 3, 4]
 
 arr = [i + i for i in range(5)]
 print(arr)  # returns [0, 2, 4, 6, 8]
+
+# 2D lists
+arr = [[0] * 5 for _ in range(5)]
+print(
+    arr
+)  # returns [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+
+# Strings (similar to arrays)
+s = "abc"
+print(s[0:2])  # returns "ab"
+
+# Valid numeric strings can be converted
+print(int("123") + int("123"))  # returns 246
+
+# Numbers can be converted to strings
+print(str(123) + str(123))  # returns "123123"
+
+# In rare case you need ASCII values
+print(ord("a"))  # returns 97
+print(ord("A"))  # returns 65
+
+# Combine a list of strings (with an empty string delimiter)
+print("".join(["ab", "cd", "ef"]))  # returns "abcdef"
+
+# Queues (double ended queue)
+from collections import deque  # noqa: E402
+
+queue = deque()
+
+queue.append("a")
+queue.append("b")
+queue.append("c")
+print(queue)  # returns deque(["a", "b", "c"])
+
+queue.popleft()
+print(queue)  # returns deque(["b", "c"])
+
+queue.appendleft("z")
+print(queue)  # returns deque(["z", "b", "c"])
+
+queue.pop()
+print(queue)  # returns deque(["z", "b"])
