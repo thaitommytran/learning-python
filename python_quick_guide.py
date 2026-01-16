@@ -280,3 +280,94 @@ print(my_dict[(1, 2)])  # returns 3
 my_set = set()
 my_set.add((1, 2))
 print((1, 2) in my_set)  # returns True
+
+# Heaps (under the hood are arrays)
+import heapq  # noqa: E402
+
+min_heap = []
+heapq.heappush(min_heap, 3)
+heapq.heappush(min_heap, 2)
+heapq.heappush(min_heap, 4)
+
+# Min is always at index 0
+print(min_heap[0])  # returns 2
+
+while min_heap:
+    print(heapq.heappop(min_heap))  # returns 2, 3, 4
+
+# No max heap in python
+# Use negative numbers to push or pop
+max_heap = []
+heapq.heappush(max_heap, -3)
+heapq.heappush(max_heap, -2)
+heapq.heappush(max_heap, -4)
+
+print(-max_heap[0])  # returns 4
+
+while max_heap:
+    print(-heapq.heappop(max_heap))  # returns 4, 3, 2
+
+# Build heap from list
+arr = [1, 2, 3, 4, 5]
+heapq.heapify(arr)
+while arr:
+    print(heapq.heappop(arr))  # returns 1, 2, 3, 4, 5
+
+
+# Functions
+def my_func(n, m):
+    return n * m
+
+
+print(my_func(2, 3))  # returns 6
+
+
+# Nested functions have access to outer scope variables
+def outer_func(a, b):
+    c = "c"
+
+    def inner_func():
+        return a + b + c
+
+    return inner_func()
+
+
+print(outer_func("a", "b"))  # returns abc
+
+
+# Can modify objects but not reassign unless using nonlocal keyword
+def double(arr, val):
+    def helper():
+        for i, n in enumerate(arr):
+            arr[i] *= 2
+
+        nonlocal val
+        val *= 2
+        arr.append(val)
+
+    helper()
+
+    print(arr, val)
+
+
+arr = [1, 2, 3]
+val = 10
+double(arr, val)
+# returns [2, 4, 6, 20]
+# returns 20
+
+
+# Class
+class MyClass:
+    # Constructor
+    def __init__(self, nums):
+        # Create member variables
+        self.nums = nums
+        self.size = len(nums)
+
+    # "self" keyword is required as a parameter
+    def get_length(self):
+        return self.size
+
+    def get_double_length(self):
+        return 2 * self.get_length()
