@@ -143,6 +143,8 @@ arr.reverse()
 print(arr)  # returns [5, 4, 3, 2, 1]
 
 # Sorting a list
+# sorted() returns a new sorted list
+# .sort() sorts the list in-place
 arr = [5, 4, 7, 3, 8]
 
 arr.sort()
