@@ -106,3 +106,24 @@ name = input("What is your name: ")
 distance_in_km = input("Enter distance in km: ")
 distance_in_miles = float(distance_in_km) / 1.609
 print(f"Hi {name.title()}! {distance_in_km} kilometers is equivalent to {round(distance_in_miles, 2)} miles.")
+
+# Arithmetic Operators
+a=6
+b=2
+print('Addition : ', a + b)
+print('Subtraction : ', a - b)
+print('Multiplication : ', a * b)
+print('Division (float) : ', a / b)
+print('Division (floor) : ', a // b)
+print('Modulus : ', a % b)
+print('Exponent : ', a ** b)
+
+# Strings and Slicing
+msg = "welcome to Python 101: Strings"
+print(msg)
+print(msg + msg)
+print(msg * 2)
+print(msg, msg)
+print(len(msg))
+print(msg.count("o"))
+print(msg[6:11])
