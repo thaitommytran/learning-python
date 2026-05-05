@@ -127,3 +127,9 @@ print(msg, msg)
 print(len(msg))
 print(msg.count("o"))
 print(msg[6:11])
+
+msg='welcome to Python 101: Strings'
+n = msg.split(" ")
+result = f"{n[3][0]} {n[0]} {n[4][2:-1]} {n[1]} {n[2][2:0:-1] + n[0][2:0:-1] + n[4][2]}"
+print(result.title())
+print(result[::-1].title())
