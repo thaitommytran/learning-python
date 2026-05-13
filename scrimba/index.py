@@ -128,8 +128,32 @@ print(len(msg))
 print(msg.count("o"))
 print(msg[6:11])
 
-msg='welcome to Python 101: Strings'
+msg = 'welcome to Python 101: Strings'
 n = msg.split(" ")
 result = f"{n[3][0]} {n[0]} {n[4][2:-1]} {n[1]} {n[2][2:0:-1] + n[0][2:0:-1] + n[4][2]}"
 print(result.title())
 print(result[::-1].title())
+
+# More String Methods
+print(msg.find("Python"))
+print(msg.replace("Python", "C"))
+print("Python" in msg)
+
+# Multiline Strings
+multiline_msg = """Dear Tommy,
+You must knock down the mightiest
+tree in the jungle with...
+a fish head! <3"""
+
+print(multiline_msg)
+
+# Formatting Strings
+name = "JERRY"
+color = "BLUE"
+msg = "[" + name + "] loves the color " + color.lower() + "!"
+msg1 = f"[{name.title()}] loves the color {color.lower()}!"
+msg2 = f"[{name.capitalize()}] loves the color {color.lower()}!"
+
+print(msg)
+print(msg1)
+print(msg2)
