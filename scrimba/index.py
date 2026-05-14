@@ -157,3 +157,30 @@ msg2 = f"[{name.capitalize()}] loves the color {color.lower()}!"
 print(msg)
 print(msg1)
 print(msg2)
+
+# 🏁 Pit Stop Timing Optimizer 🔧
+#
+# 1. Ask the user for the total race time in seconds.
+# 2. Ask how many pit stops were made.
+# 3. Ask for the average pit stop duration (in seconds).
+#
+# Then:
+# - Calculate the total pit stop time.
+# - Calculate the percentage of the race spent in the pits.
+# - Round the percentage to 2 decimal places.
+#
+# Finally, print all of the following:
+# - Total pit stop time in seconds
+# - Percentage of race time spent in pits
+# - A final message if pit time > 5% of the race: "You need a new pit crew. 🛠️"
+
+total_time = float(input("Total race time in seconds: "))
+num = float(input("Number of pit stops made: "))
+avg = float(input("Average pit stop duration in seconds: "))
+
+total_pst = num * avg
+percent_pst = total_pst / total_time * 100
+
+print(f"Total pit stop time: {total_pst} sec")
+print(f"Percentage pit stop time: {percent_pst:.2f}%")
+if percent_pst > 5: print("You need a new pit crew. 🛠️")
