@@ -175,7 +175,7 @@ print(msg2)
 # - A final message if pit time > 5% of the race: "You need a new pit crew. 🛠️"
 
 total_time = float(input("Total race time in seconds: "))
-num = float(input("Number of pit stops made: "))
+num = int(input("Number of pit stops made: "))
 avg = float(input("Average pit stop duration in seconds: "))
 
 total_pst = num * avg
@@ -184,3 +184,13 @@ percent_pst = total_pst / total_time * 100
 print(f"Total pit stop time: {total_pst} sec")
 print(f"Percentage pit stop time: {percent_pst:.2f}%")
 if percent_pst > 5: print("You need a new pit crew. 🛠️")
+
+# Lists
+friends = ['John','Michael','Terry','Eric','Graham']
+
+print(friends[1],friends[4])
+print(friends[-1])
+print(friends[:4])
+print(len(friends))
+print(friends.index('Eric'))
+print(friends.count('Eric'))
