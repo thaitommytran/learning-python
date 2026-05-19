@@ -194,3 +194,52 @@ print(friends[:4])
 print(len(friends))
 print(friends.index('Eric'))
 print(friends.count('Eric'))
+
+friends = ['John','Michael','Terry','Eric','Graham']
+cars=[911, 130, 328, 535, 740, 308]
+
+print(friends) # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
+
+friends.sort()
+print(cars) # [130, 308, 328, 535, 740, 911]
+
+friends.sort(reverse=True)
+print(friends) # ['Terry', 'Michael', 'John', 'Graham', 'Eric']
+
+friends.reverse()
+print(cars) # [308, 740, 535, 328, 130, 911]
+
+print(min(cars)) # 130
+print(max(cars)) # 911
+print(sum(cars)) # 2642
+
+friends.append("Tommy")
+print(friends) # ['Terry', 'Michael', 'John', 'Graham', 'Eric', 'Tommy']
+
+friends.insert(2, "Thai")
+print(friends) # ['Terry', 'Michael', 'Thai', 'John', 'Graham', 'Eric', 'Tommy']
+
+friends[2] = "Sasuke"
+print(friends) # ['Terry', 'Michael', 'Sasuke', 'John', 'Graham', 'Eric', 'Tommy']
+
+friends.remove("John")
+print(friends) # ['Terry', 'Michael', 'Sasuke', 'Graham', 'Eric', 'Tommy']
+
+friends.pop(2)
+print(friends) # ['Terry', 'Michael', 'Graham', 'Eric', 'Tommy']
+
+friends.clear()
+print(friends) # []
+
+del friends
+print(friends) # NameError: name 'friends' is not defined
+
+friends = ['John','Michael','Terry','Eric','Graham']
+new_friends = friends[:]
+print(new_friends) # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
+
+new_friends.copy()
+print(new_friends) # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
+
+new_friends = list(friends)
+print(new_friends) # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
