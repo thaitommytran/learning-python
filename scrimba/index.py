@@ -274,3 +274,14 @@ sum_best_worst = best_day + worst_day
 print(f"Best day: ${best_day:.2f}")
 print(f"Worst day: ${worst_day:.2f}")
 print(f"Sum of best and worst day: ${sum_best_worst:.2f}")
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''   
+     NEW START: Splits and Joins section
+    =====================================
+        - Here on out, we will make notes of the code we dont know
+        - Be sure to use pythonic principles and best practices
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
