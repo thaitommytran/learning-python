@@ -243,3 +243,34 @@ print(new_friends) # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
 
 new_friends = list(friends)
 print(new_friends) # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
+
+# 🍋 Selling Lemonade Challenge 🍋
+#
+# 1. You sell lemonade for over two weeks, the lists show number of lemonades   #    sold per week
+#
+# 2. Profit for each lemonade sold is $1.50
+#
+# Lists Exercise 6:
+#
+# - Add another day to week 2 list by capturing a number as an input
+# - Combine the two lists int the lists called 'sales'
+# - Calculate/print how much you have earned on your:
+#
+#         I. best day
+#        II. worst day
+#       III. sum of best and worst day
+
+sales_w1 = [7, 3, 42, 19, 15, 35, 9]
+sales_w2 = [12, 4, 26, 10, 7, 28]
+
+last = int(input("Enter sales for the last day of week 2: "))
+sales_w2.append(last)
+sales = sales_w1 + sales_w2
+
+best_day = max(sales) * 1.50
+worst_day = min(sales) * 1.50
+sum_best_worst = best_day + worst_day
+
+print(f"Best day: ${best_day:.2f}")
+print(f"Worst day: ${worst_day:.2f}")
+print(f"Sum of best and worst day: ${sum_best_worst:.2f}")
