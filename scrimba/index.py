@@ -105,18 +105,20 @@ print(spacer)
 name = input("What is your name: ")
 distance_in_km = input("Enter distance in km: ")
 distance_in_miles = float(distance_in_km) / 1.609
-print(f"Hi {name.title()}! {distance_in_km} kilometers is equivalent to {round(distance_in_miles, 2)} miles.")
+print(
+    f"Hi {name.title()}! {distance_in_km} kilometers is equivalent to {round(distance_in_miles, 2)} miles."
+)
 
 # Arithmetic Operators
-a=6
-b=2
-print('Addition : ', a + b)
-print('Subtraction : ', a - b)
-print('Multiplication : ', a * b)
-print('Division (float) : ', a / b)
-print('Division (floor) : ', a // b)
-print('Modulus : ', a % b)
-print('Exponent : ', a ** b)
+a = 6
+b = 2
+print("Addition : ", a + b)
+print("Subtraction : ", a - b)
+print("Multiplication : ", a * b)
+print("Division (float) : ", a / b)
+print("Division (floor) : ", a // b)
+print("Modulus : ", a % b)
+print("Exponent : ", a**b)
 
 # Strings and Slicing
 msg = "welcome to Python 101: Strings"
@@ -128,7 +130,7 @@ print(len(msg))
 print(msg.count("o"))
 print(msg[6:11])
 
-msg = 'welcome to Python 101: Strings'
+msg = "welcome to Python 101: Strings"
 n = msg.split(" ")
 result = f"{n[3][0]} {n[0]} {n[4][2:-1]} {n[1]} {n[2][2:0:-1] + n[0][2:0:-1] + n[4][2]}"
 print(result.title())
@@ -183,66 +185,67 @@ percent_pst = total_pst / total_time * 100
 
 print(f"Total pit stop time: {total_pst} sec")
 print(f"Percentage pit stop time: {percent_pst:.2f}%")
-if percent_pst > 5: print("You need a new pit crew. 🛠️")
+if percent_pst > 5:
+    print("You need a new pit crew. 🛠️")
 
 # Lists
-friends = ['John','Michael','Terry','Eric','Graham']
+friends = ["John", "Michael", "Terry", "Eric", "Graham"]
 
-print(friends[1],friends[4])
+print(friends[1], friends[4])
 print(friends[-1])
 print(friends[:4])
 print(len(friends))
-print(friends.index('Eric'))
-print(friends.count('Eric'))
+print(friends.index("Eric"))
+print(friends.count("Eric"))
 
-friends = ['John','Michael','Terry','Eric','Graham']
-cars=[911, 130, 328, 535, 740, 308]
+friends = ["John", "Michael", "Terry", "Eric", "Graham"]
+cars = [911, 130, 328, 535, 740, 308]
 
-print(friends) # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
+print(friends)  # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
 
 friends.sort()
-print(cars) # [130, 308, 328, 535, 740, 911]
+print(cars)  # [130, 308, 328, 535, 740, 911]
 
 friends.sort(reverse=True)
-print(friends) # ['Terry', 'Michael', 'John', 'Graham', 'Eric']
+print(friends)  # ['Terry', 'Michael', 'John', 'Graham', 'Eric']
 
 friends.reverse()
-print(cars) # [308, 740, 535, 328, 130, 911]
+print(cars)  # [308, 740, 535, 328, 130, 911]
 
-print(min(cars)) # 130
-print(max(cars)) # 911
-print(sum(cars)) # 2642
+print(min(cars))  # 130
+print(max(cars))  # 911
+print(sum(cars))  # 2642
 
 friends.append("Tommy")
-print(friends) # ['Terry', 'Michael', 'John', 'Graham', 'Eric', 'Tommy']
+print(friends)  # ['Terry', 'Michael', 'John', 'Graham', 'Eric', 'Tommy']
 
 friends.insert(2, "Thai")
-print(friends) # ['Terry', 'Michael', 'Thai', 'John', 'Graham', 'Eric', 'Tommy']
+print(friends)  # ['Terry', 'Michael', 'Thai', 'John', 'Graham', 'Eric', 'Tommy']
 
 friends[2] = "Sasuke"
-print(friends) # ['Terry', 'Michael', 'Sasuke', 'John', 'Graham', 'Eric', 'Tommy']
+print(friends)  # ['Terry', 'Michael', 'Sasuke', 'John', 'Graham', 'Eric', 'Tommy']
 
 friends.remove("John")
-print(friends) # ['Terry', 'Michael', 'Sasuke', 'Graham', 'Eric', 'Tommy']
+print(friends)  # ['Terry', 'Michael', 'Sasuke', 'Graham', 'Eric', 'Tommy']
 
 friends.pop(2)
-print(friends) # ['Terry', 'Michael', 'Graham', 'Eric', 'Tommy']
+print(friends)  # ['Terry', 'Michael', 'Graham', 'Eric', 'Tommy']
 
 friends.clear()
-print(friends) # []
+print(friends)  # []
 
 del friends
-print(friends) # NameError: name 'friends' is not defined
+print(friends)  # NameError: name 'friends' is not defined
 
-friends = ['John','Michael','Terry','Eric','Graham']
+friends = ["John", "Michael", "Terry", "Eric", "Graham"]
 new_friends = friends[:]
-print(new_friends) # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
+print(new_friends)  # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
 
 new_friends.copy()
-print(new_friends) # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
+print(new_friends)  # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
 
 new_friends = list(friends)
-print(new_friends) # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
+print(new_friends)  # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
 
 # 🍋 Selling Lemonade Challenge 🍋
 #
@@ -276,22 +279,24 @@ print(f"Worst day: ${worst_day:.2f}")
 print(f"Sum of best and worst day: ${sum_best_worst:.2f}")
 
 
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''   
+"""""" """""" """""" """""" """""" """""" """""" """""" """""" """""" """''   
      NEW START: Splits and Joins section
     =====================================
         - Here on out, we will make notes of the code we dont know
         - Be sure to use pythonic principles and best practices
 
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+""" """""" """""" """""" """""" """""" """""" """""" """""" """""" """""" ""
 
 # Exercise 8: Split and Join
-csv = 'Eric,John,Michael,Terry,Graham:TerryG;Brian'
-friends_list = ['Exercise: fill me with names']
+csv = "Eric,John,Michael,Terry,Graham:TerryG;Brian"
+friends_list = ["Exercise: fill me with names"]
 print(friends_list)
 # From the list above fill a list(friends_list) properly
 # with the names of all the friends. One per "slot"
 # you may need to run same command several times
 # use print() statements to work your way through the exercise
-    
+
 friends_list = (",".join((",".join((csv.split(":"))).split(";")))).split(",")
+friends_list_2 = csv.replace(":", ",").replace(";", ",").split(",")
 print(friends_list)
+print(friends_list_2)
