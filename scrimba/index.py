@@ -249,15 +249,15 @@ print(new_friends)  # ['John', 'Michael', 'Terry', 'Eric', 'Graham']
 
 # 🍋 Selling Lemonade Challenge 🍋
 #
-# 1. You sell lemonade for over two weeks, the lists show number of lemonades   #    sold per week
-#
-# 2. Profit for each lemonade sold is $1.50
+#   1. You sell lemonade for over two weeks, the lists show number of lemonades
+#      sold per week
+#   2. Profit for each lemonade sold is $1.50
 #
 # Lists Exercise 6:
 #
-# - Add another day to week 2 list by capturing a number as an input
-# - Combine the two lists int the lists called 'sales'
-# - Calculate/print how much you have earned on your:
+#   - Add another day to week 2 list by capturing a number as an input
+#   - Combine the two lists int the lists called 'sales'
+#   - Calculate/print how much you have earned on your:
 #
 #         I. best day
 #        II. worst day
@@ -279,8 +279,8 @@ print(f"Worst day: ${worst_day:.2f}")
 print(f"Sum of best and worst day: ${sum_best_worst:.2f}")
 
 
-"""""" """""" """""" """""" """""" """""" """""" """""" """""" """""" """''   
-     NEW START: Splits and Joins section
+"""""" """""" """""" """""" """""" """""" """""" """""" """""" """""" """""
+    # NEW START: Splits and Joins section
     =====================================
         - Here on out, we will make notes of the code we dont know
         - Be sure to use pythonic principles and best practices
